@@ -1,0 +1,95 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.container {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+table {
+  width: 800px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px #f29263;
+}
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.897);
+  color: rgb(26, 25, 25);
+}
+th {
+  text-align: left;
+}
+thead th {
+  background-color: #f29263;
+}
+tbody tr:hover {
+  background-color: rgba(255, 213, 149, 0.884);
+}
+tbody td {
+  position: relative;
+}
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 213, 149, 0.884);
+  z-index: -1;
+}
+.user-card-full .social-link li {
+    display: inline-block
+}
+
+.user-card-full .social-link li a {
+    font-size: 20px;
+    margin: 0 10px 0 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#ee5a6f;
+}
+
+li {
+
+    float: left;
+}
+
+li a {
+    display: inline-block ;
+    color: #1b1e21;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /*background-color:#ee5a6f*/
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #f29263;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    color: #f29263;
+    text-decoration: none;
+    background-color: transparent;
+    /*background-color: #dddddd;*/
+}
